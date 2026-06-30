@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
 .loading {  
   background: linear-gradient(270deg, #fafafa, #f6e1e2);
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 5 ease infinite;
+  -webkit-animation: AnimationName 5s ease infinite;
   -moz-animation: AnimationName 5s ease infinite;
   animation: AnimationName 5s ease infinite;
   /* background-color: #990033; */
@@ -60,7 +62,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--text-dark);
     background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1629 100%);
@@ -109,6 +111,7 @@ header {
 }
 
 h1 {
+    font-family: var(--font-display);
     font-size: 3.5em;
     font-weight: 800;
     margin-bottom: 15px;
@@ -142,6 +145,7 @@ h1 {
 }
 
 .section-title {
+    font-family: var(--font-display);
     font-size: 2.2em;
     font-weight: 700;
     margin-bottom: 40px;
@@ -188,6 +192,7 @@ h1 {
 }
 
 .value-card h3 {
+    font-family: var(--font-display);
     font-size: 1.3em;
     margin-bottom: 12px;
     color: var(--primary);
@@ -233,6 +238,7 @@ h1 {
 }
 
 .layer-title {
+    font-family: var(--font-display);
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 8px;
@@ -244,6 +250,7 @@ h1 {
 }
 
 .architecture-text h3 {
+    font-family: var(--font-display);
     font-size: 1.5em;
     margin-bottom: 20px;
     color: var(--primary);
@@ -331,6 +338,7 @@ h1 {
 }
 
 .module-name {
+    font-family: var(--font-display);
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 8px;
@@ -396,6 +404,7 @@ h1 {
 }
 
 .step-title {
+    font-family: var(--font-display);
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -449,6 +458,7 @@ h1 {
 }
 
 .metric-value {
+    font-family: var(--font-display);
     font-size: 2.8em;
     font-weight: 800;
     margin-bottom: 10px;
@@ -488,6 +498,7 @@ h1 {
 }
 
 .integration-name {
+    font-family: var(--font-display);
     font-weight: 700;
     font-size: 0.9em;
     color: var(--primary);
@@ -506,6 +517,7 @@ h1 {
 }
 
 .cta-section h2 {
+    font-family: var(--font-display);
     font-size: 2em;
     margin-bottom: 20px;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -688,6 +700,7 @@ html {
 }
 
 .modal-title {
+    font-family: var(--font-display);
     font-size: 2em;
     font-weight: 700;
     color: var(--primary);
@@ -726,6 +739,7 @@ html {
 }
 
 .modal-section h3 {
+    font-family: var(--font-display);
     font-size: 1.3em;
     color: var(--primary);
     margin-bottom: 15px;
@@ -881,6 +895,7 @@ html {
 }
 
 .panel-module-name {
+    font-family: var(--font-display);
     font-size: 1.8em;
     font-weight: 700;
     color: var(--primary);
@@ -906,6 +921,7 @@ html {
 }
 
 .panel-section-title {
+    font-family: var(--font-display);
     font-size: 1.1em;
     font-weight: 700;
     color: var(--primary);
@@ -995,6 +1011,7 @@ html {
 }
 
 .chart-title {
+    font-family: var(--font-display);
     font-size: 1.2em;
     font-weight: 700;
     color: var(--primary);
