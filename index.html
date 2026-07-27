@@ -3,1144 +3,855 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reactory - Enterprise RAD Platform</title>
+    <title>Reactory — Enterprise applications, defined as data</title>
+    <meta name="description" content="An MIT-licensed, multi-tenant application platform. JSON Schema forms, YAML workflows and YAML agents, assembled per tenant and per role by a GraphQL server. Multi-tenancy, RBAC, SSO, durable workflows and an agentic layer, built in.">
+    <meta property="og:title" content="Reactory — Enterprise applications, defined as data">
+    <meta property="og:description" content="Multi-tenancy, four-dimensional RBAC, nine auth strategies, a durable saga workflow engine and a first-class agentic layer. Open core, MIT licensed.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./images/reactory_avatar.png">
     <link rel="stylesheet" href="./styles/core.css">
     <link rel="stylesheet" href="./styles/background.css">
     <link rel="stylesheet" href="./styles/components.css">
     <link rel="stylesheet" href="./styles/sections.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/enhancements.css">
 </head>
 <body>
-    <!-- Cybernetic Background Elements -->
-    <div class="grid-nodes">
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
-        <div class="grid-node"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Cybernetic background -->
+    <div class="grid-nodes" aria-hidden="true">
+        <div class="grid-node"></div><div class="grid-node"></div><div class="grid-node"></div>
+        <div class="grid-node"></div><div class="grid-node"></div><div class="grid-node"></div>
+        <div class="grid-node"></div><div class="grid-node"></div><div class="grid-node"></div>
+        <div class="grid-node"></div><div class="grid-node"></div><div class="grid-node"></div>
     </div>
-    
-    <div class="energy-lines">
-        <div class="energy-line"></div>
-        <div class="energy-line"></div>
-        <div class="energy-line"></div>
-        <div class="energy-line"></div>
+    <div class="energy-lines" aria-hidden="true">
+        <div class="energy-line"></div><div class="energy-line"></div>
+        <div class="energy-line"></div><div class="energy-line"></div>
     </div>
-    
-    <div class="hex-pattern"></div>
-    
-    <div class="glow-orb glow-orb--1"></div>
-    <div class="glow-orb glow-orb--2"></div>
-    <div class="glow-orb glow-orb--3"></div>
-</body>
-    <div class="container">
-        <!-- Header -->
-        <header>
-            <img src="./images/reactory-logo.png" alt="Reactory" class="logo-image">
-            <div class="logo">⚡ REACTORY</div>
-            <h1>Enterprise RAD Platform</h1>
-            <p class="subtitle">Reduce integration costs by 60% and accelerate time-to-market with a unified, extensible platform</p>
+    <div class="hex-pattern" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb--1" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb--2" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb--3" aria-hidden="true"></div>
+
+    <!-- Nav -->
+    <nav class="site-nav">
+        <div class="site-nav__inner">
+            <a class="site-nav__brand" href="#top">
+                <img src="./images/reactory-logo.png" alt="">
+                REACTORY
+            </a>
+            <div class="site-nav__links">
+                <a href="#idea">The idea</a>
+                <a href="#platform">Platform</a>
+                <a href="#modules">Modules</a>
+                <a href="#workflow">Workflow</a>
+                <a href="#agents">Agents</a>
+                <a href="#integrate">Integrate</a>
+                <a href="#build">Build</a>
+                <a href="#licence">Licence</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero -->
+        <header class="hero" id="top">
+            <div class="hero__eyebrow">Open core · MIT licensed platform</div>
+            <h1>Enterprise applications,<br><span class="grad">defined as data.</span></h1>
+            <p class="hero__lede">
+                Reactory is a multi-tenant application platform where screens are JSON Schema forms,
+                business processes are YAML workflows, and AI agents are YAML personas — assembled per
+                tenant and per role by a GraphQL server, and rendered by a schema-driven client.
+                Change what your application does without redeploying it.
+            </p>
+            <div class="hero__cta">
+                <a class="button button--primary" href="#build">Start building</a>
+                <a class="button button--ghost" href="#platform">See what's included</a>
+            </div>
         </header>
 
-        <!-- Main Content -->
-        <div class="content">
-            <!-- Value Proposition -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">💡</span>
-                    Why Reactory?
-                </h2>
-                <div class="value-grid">
-                    <div class="value-card">
-                        <h3>Rapid Integration</h3>
-                        <p>Connect enterprise systems, APIs, and third-party services 60% faster with pre-built adapters and a unified data layer.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3>Modular Architecture</h3>
-                        <p>Deploy only what you need. Add capabilities on-demand without redeploying the entire platform. Pay only for what you use.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3>Schema-Driven Extensions</h3>
-                        <p>Define forms, APIs, and workflows with JSON Schema and YAML—automatically generate the boilerplate, then focus on business logic.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3>Enterprise Ready</h3>
-                        <p>Multi-tenant architecture, GraphQL API, OpenTelemetry observability, and RBAC built-in from the ground up.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3>AI-Powered Development</h3>
-                        <p>Leverage Reactor module for code generation, intelligent automation, and guided development workflows.</p>
-                    </div>
-                    <div class="value-card">
-                        <h3>Cross-Platform</h3>
-                        <p>Single backend serving web (React PWA), native mobile (React Native), and desktop (Electron) clients.</p>
-                    </div>
-                </div>
-            </section>
+        <!-- Stat bar -->
+        <div class="statbar">
+            <div class="statbar__grid">
+                <div class="stat"><div class="stat__value">13</div><div class="stat__label">Modules</div></div>
+                <div class="stat"><div class="stat__value">35</div><div class="stat__label">Workflow steps</div></div>
+                <div class="stat"><div class="stat__value">9</div><div class="stat__label">Auth strategies</div></div>
+                <div class="stat"><div class="stat__value">10</div><div class="stat__label">AI providers</div></div>
+                <div class="stat"><div class="stat__value">6</div><div class="stat__label">Data engines</div></div>
+                <div class="stat"><div class="stat__value">MIT</div><div class="stat__label">Platform licence</div></div>
+            </div>
+        </div>
 
-            <!-- Time to Market Comparison -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">⚡</span>
-                    Reactory vs Traditional Engineering
-                </h2>
-                <p style="color: var(--text-light); margin-bottom: 40px; font-size: 1.05em;">
-                    See how Reactory accelerates development compared to traditional approaches, even when using AI assistance.
-                </p>
-                <div class="comparison-container">
-                    <!-- Time to Market Chart -->
-                    <div class="chart-wrapper">
-                        <div class="chart-title">Time to Market (Weeks)</div>
-                        <div class="bar-chart">
-                            <div class="bar-item">
-                                <div class="bar reactory" style="height: 30%;"></div>
-                                <div class="bar-value">4-6w</div>
-                                <div class="bar-label">Reactory</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar ai-assisted" style="height: 60%;"></div>
-                                <div class="bar-value">12-16w</div>
-                                <div class="bar-label">AI-Assisted Traditional</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar traditional" style="height: 100%;"></div>
-                                <div class="bar-value">20-24w</div>
-                                <div class="bar-label">Traditional</div>
-                            </div>
-                        </div>
-                        <div class="comparison-insight">
-                            <strong>Why?</strong> Reactory's pre-built modules, schema-driven development, and zero-downtime deployments cut development phases from months to weeks.
-                        </div>
-                    </div>
+        <!-- The idea -->
+        <section class="sec reveal" id="idea">
+            <div class="sec__kicker">The core idea</div>
+            <h2 class="sec__title">Your application is a set of definitions, not a build artifact</h2>
+            <p class="sec__lede">
+                Most platforms make you write code to add a screen, then rebuild and redeploy the
+                frontend to ship it. Reactory holds the application as data on the server and assembles
+                it per request. Three properties make that work, and they compound.
+            </p>
 
-                    <!-- Development Cost Chart -->
-                    <div class="chart-wrapper">
-                        <div class="chart-title">Relative Development Cost</div>
-                        <div class="bar-chart">
-                            <div class="bar-item">
-                                <div class="bar reactory" style="height: 35%;"></div>
-                                <div class="bar-value">$250K</div>
-                                <div class="bar-label">Reactory</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar ai-assisted" style="height: 65%;"></div>
-                                <div class="bar-value">$500K</div>
-                                <div class="bar-label">AI-Assisted Traditional</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar traditional" style="height: 100%;"></div>
-                                <div class="bar-value">$700K</div>
-                                <div class="bar-label">Traditional</div>
-                            </div>
-                        </div>
-                        <div class="comparison-insight">
-                            <strong>Why?</strong> Shared infrastructure, pre-built adapters, and configurable workflows reduce engineering headcount and custom code requirements.
-                        </div>
-                    </div>
-
-                    <!-- Integration Complexity Chart -->
-                    <div class="chart-wrapper">
-                        <div class="chart-title">Integration Complexity Score</div>
-                        <div class="bar-chart">
-                            <div class="bar-item">
-                                <div class="bar reactory" style="height: 30%;"></div>
-                                <div class="bar-value">2/10</div>
-                                <div class="bar-label">Reactory</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar ai-assisted" style="height: 65%;"></div>
-                                <div class="bar-value">6.5/10</div>
-                                <div class="bar-label">AI-Assisted Traditional</div>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar traditional" style="height: 100%;"></div>
-                                <div class="bar-value">8.5/10</div>
-                                <div class="bar-label">Traditional</div>
-                            </div>
-                        </div>
-                        <div class="comparison-insight">
-                            <strong>Why?</strong> Microkernel architecture, event-driven design, and GraphQL API make integrations composable. Traditional systems require custom middleware and brittle point-to-point integrations.
-                        </div>
-                    </div>
-                </div>
-
-                <div style="background: linear-gradient(135deg, rgba(26,31,58,0.8), rgba(15,22,41,0.9)); border-radius: 12px; padding: 40px; margin-top: 40px; text-align: center; border: 1px solid rgba(0,217,255,0.15);">
-                    <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4em;">The Reactory Advantage</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px;">
+            <div class="split">
+                <div class="layers">
+                    <div class="layerrow">
+                        <div class="layerrow__num">01</div>
                         <div>
-                            <div style="font-size: 2em; color: #10b981; font-weight: 700; margin-bottom: 10px;">4x</div>
-                            <div style="color: var(--text-light);">Faster Time to Market</div>
+                            <h4>One naming convention, every layer</h4>
+                            <p><code>nameSpace.Name@version</code> identifies forms, UI components, widgets,
+                            services, workflows, personas, plugins and AI tools alike. One resolution model.
+                            One extension model. Nothing to learn twice.</p>
                         </div>
+                    </div>
+                    <div class="layerrow">
+                        <div class="layerrow__num">02</div>
                         <div>
-                            <div style="font-size: 2em; color: #10b981; font-weight: 700; margin-bottom: 10px;">65%</div>
-                            <div style="color: var(--text-light);">Lower Development Costs</div>
+                            <h4>The server drives the client</h4>
+                            <p>Routes, menus, themes, forms and plugins all arrive from a single
+                            <code>apiStatus</code> query at boot. Change a user's role and their application
+                            changes — no release, no cache bust, no app store.</p>
                         </div>
+                    </div>
+                    <div class="layerrow">
+                        <div class="layerrow__num">03</div>
                         <div>
-                            <div style="font-size: 2em; color: #10b981; font-weight: 700; margin-bottom: 10px;">70%</div>
-                            <div style="color: var(--text-light);">Less Integration Complexity</div>
+                            <h4>Forms are the unit of interface</h4>
+                            <p>A JSON Schema plus a uiSchema, bound to GraphQL. Every form auto-registers
+                            as an addressable component, so it can be a route, embedded in another form,
+                            or rendered live by an AI agent into a chat panel.</p>
                         </div>
-                        <div>
-                            <div style="font-size: 2em; color: #10b981; font-weight: 700; margin-bottom: 10px;">0</div>
-                            <div style="color: var(--text-light);">Vendor Lock-In</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🏗️</span>
-                    Platform Architecture
-                </h2>
-                <div class="architecture">
-                    <div class="architecture-diagram">
-                        <div class="layer">
-                            <div class="layer-title">📱 Clients</div>
-                            <div class="layer-desc">PWA, Native, Electron</div>
-                        </div>
-                        <div class="layer">
-                            <div class="layer-title">🔌 API Gateway & GraphQL</div>
-                            <div class="layer-desc">Unified data transport</div>
-                        </div>
-                        <div class="layer">
-                            <div class="layer-title">⚡ Microkernel Core</div>
-                            <div class="layer-desc">Service registry & routing</div>
-                        </div>
-                        <div class="layer">
-                            <div class="layer-title">🧩 Module System</div>
-                            <div class="layer-desc">Pluggable modules & adapters</div>
-                        </div>
-                        <div class="layer">
-                            <div class="layer-title">💾 Data & Persistence</div>
-                            <div class="layer-desc">PostgreSQL, MongoDB, caching</div>
-                        </div>
-                    </div>
-                    <div class="architecture-text">
-                        <h3>Built on Proven Patterns</h3>
-                        <ul>
-                            <li><strong>Microkernel Architecture:</strong> Extensible plugin system for adding capabilities without modifying core</li>
-                            <li><strong>Schema-Driven:</strong> JSON Schema defines interfaces; forms, workflows, and data structures auto-generate</li>
-                            <li><strong>Event-Driven:</strong> Queue-based asynchronous processing for scalable workflows and integrations</li>
-                            <li><strong>Multi-Tenant:</strong> Complete isolation and resource management for multiple customers from a single deployment</li>
-                            <li><strong>Observable:</strong> Built-in OpenTelemetry metrics, distributed tracing, and custom telemetry</li>
-                            <li><strong>Composable:</strong> Services connect via GraphQL queries and mutations—no hard dependencies</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Core Modules -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🧩</span>
-                    Integrated Modules
-                </h2>
-                <p style="color: var(--text-light); margin-bottom: 30px; font-size: 1.05em;">
-                    Deploy the modules your business needs. Each is fully isolated and can scale independently.
-                </p>
-                <div class="module-grid">
-                    <div class="module-card">
-                        <img src="./images/reactor-logo.png" alt="Reactor" class="module-logo">
-                        <div class="module-name">Reactor</div>
-                        <div class="module-desc">AI-powered code generation and intelligent development assistance</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-telemetry-logo.png" alt="Telemetry" class="module-logo">
-                        <div class="module-name">Telemetry</div>
-                        <div class="module-desc">OpenTelemetry observability, Prometheus metrics, distributed tracing</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-queue-logo.png" alt="Queue" class="module-logo">
-                        <div class="module-name">Queue</div>
-                        <div class="module-desc">Background jobs, async processing, event streaming, workflow orchestration</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-communicator-logo.png" alt="Communicator" class="module-logo">
-                        <div class="module-name">Communicator</div>
-                        <div class="module-desc">Email, SMS, push notifications, and multi-channel messaging</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-socialeyes-logo.png" alt="Social Eyes" class="module-logo">
-                        <div class="module-name">Social Eyes</div>
-                        <div class="module-desc">Social media monitoring, unified messaging (X, Reddit, Facebook, Instagram)</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-slack-logo.png" alt="Slack" class="module-logo">
-                        <div class="module-name">Slack</div>
-                        <div class="module-desc">Slack integration, bot framework, bidirectional messaging</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-azure-logo.png" alt="Azure" class="module-logo">
-                        <div class="module-name">Azure</div>
-                        <div class="module-desc">Azure services integration, blob storage, authentication, compute</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-knowledgebase-logo.png" alt="Knowledge Base" class="module-logo">
-                        <div class="module-name">Knowledge Base</div>
-                        <div class="module-desc">Document management, semantic search, AI-powered Q&A</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-classroom-logo.png" alt="Classroom" class="module-logo">
-                        <div class="module-name">Classroom</div>
-                        <div class="module-desc">Learning management, courses, assessments, certifications</div>
-                    </div>
-                    <div class="module-card">
-                        <img src="./images/reactory-kyc-logo.png" alt="KYC" class="module-logo">
-                        <div class="module-name">KYC</div>
-                        <div class="module-desc">Know Your Customer verification, compliance, identity management</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Integration Capability -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🔗</span>
-                    Enterprise Integration Ready
-                </h2>
-                <p style="color: var(--text-light); margin-bottom: 20px; font-size: 1.05em;">
-                    Connect to your entire technology stack with pre-built adapters and extensible API interfaces.
-                </p>
-                <div class="integration-matrix">
-                    <div class="integration-item">
-                        <div class="integration-icon">☁️</div>
-                        <div class="integration-name">Cloud Platforms</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">🔐</div>
-                        <div class="integration-name">Auth & IAM</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">💳</div>
-                        <div class="integration-name">Payment Gateways</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">📊</div>
-                        <div class="integration-name">BI & Analytics</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">📧</div>
-                        <div class="integration-name">Email Services</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">🗂️</div>
-                        <div class="integration-name">Document Stores</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">🎤</div>
-                        <div class="integration-name">Voice & AI</div>
-                    </div>
-                    <div class="integration-item">
-                        <div class="integration-icon">🔔</div>
-                        <div class="integration-name">Webhooks & APIs</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- How to Extend -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🚀</span>
-                    Extensibility Framework
-                </h2>
-                <p style="color: var(--text-light); margin-bottom: 30px; font-size: 1.05em;">
-                    Build and deploy custom modules in minutes using the Reactory SDK. Here's the process:
-                </p>
-                
-                <div class="toggle-container">
-                    <button class="toggle-btn active" onclick="showView('developer')">Developer View</button>
-                    <button class="toggle-btn" onclick="showView('business')">Business Impact</button>
-                </div>
-
-                <div id="developer" class="content-view active">
-                    <div class="extension-showcase">
-                        <div class="extension-flow">
-                            <div class="flow-step active">
-                                <div class="step-number">1</div>
-                                <div class="step-title">Define Schema</div>
-                                <div class="step-desc">JSON Schema types and GraphQL definitions</div>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-step">
-                                <div class="step-number">2</div>
-                                <div class="step-title">Implement Services</div>
-                                <div class="step-desc">TypeScript service classes with DI</div>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-step">
-                                <div class="step-number">3</div>
-                                <div class="step-title">Register Module</div>
-                                <div class="step-desc">Plugin system auto-discovery</div>
-                            </div>
-                            <div class="flow-arrow">→</div>
-                            <div class="flow-step">
-                                <div class="step-number">4</div>
-                                <div class="step-title">Deploy & Run</div>
-                                <div class="step-desc">Hot-load without core restart</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style="margin-top: 30px; padding: 25px; background: var(--bg-light); border-radius: 8px;">
-                        <h4 style="margin-bottom: 15px; color: var(--primary-dark);">SDK Features:</h4>
-                        <ul style="list-style: none; color: var(--text-light);">
-                            <li style="margin: 8px 0;">✓ TypeScript first with full type safety</li>
-                            <li style="margin: 8px 0;">✓ Dependency injection container built-in</li>
-                            <li style="margin: 8px 0;">✓ GraphQL resolver generation from types</li>
-                            <li style="margin: 8px 0;">✓ Event system for cross-module communication</li>
-                            <li style="margin: 8px 0;">✓ YAML workflow orchestration support</li>
-                            <li style="margin: 8px 0;">✓ Built-in caching and queue integration</li>
-                        </ul>
                     </div>
                 </div>
 
-                <div id="business" class="content-view">
-                    <div style="background: var(--bg-light); border-radius: 8px; padding: 40px; text-align: center;">
-                        <h3 style="font-size: 1.4em; color: var(--primary-dark); margin-bottom: 30px;">
-                            What This Means for Your Business
-                        </h3>
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-                            <div style="padding: 25px; background: white; border-radius: 8px; border-left: 4px solid var(--success);">
-                                <div style="font-size: 1.8em; color: var(--success); font-weight: 700; margin-bottom: 10px;">4-6 Weeks</div>
-                                <div style="color: var(--text-light);">Average deployment time for new capabilities</div>
-                            </div>
-                            <div style="padding: 25px; background: white; border-radius: 8px; border-left: 4px solid var(--success);">
-                                <div style="font-size: 1.8em; color: var(--success); font-weight: 700; margin-bottom: 10px;">60%</div>
-                                <div style="color: var(--text-light);">Reduction in integration costs vs. custom build</div>
-                            </div>
-                            <div style="padding: 25px; background: white; border-radius: 8px; border-left: 4px solid var(--success);">
-                                <div style="font-size: 1.8em; color: var(--success); font-weight: 700; margin-bottom: 10px;">Zero Downtime</div>
-                                <div style="color: var(--text-light);">Deploy modules without impacting production</div>
-                            </div>
-                        </div>
-                        <p style="color: var(--text-light); margin-top: 30px; line-height: 1.8;">
-                            Scale your platform in parallel with business growth. Add features, integrations, and modules on your own timeline. 
-                            No rearchitecting, no redeployment of the entire system.
-                        </p>
+                <div class="code">
+                    <div class="code__bar">
+                        <span class="code__dot"></span><span class="code__dot"></span><span class="code__dot"></span>
+                        <span class="code__file">reactor.AgentGitCommitInputForm@1.0.0.yaml</span>
                     </div>
-                </div>
-            </section>
+<pre><span class="c"># A screen. No build step, no redeploy.</span>
+<span class="k">id</span>: reactor.AgentGitCommitInputForm@1.0.0
+<span class="k">uiFramework</span>: material
 
-            <!-- ROI & Impact -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">📈</span>
-                    Business Impact
-                </h2>
-                <div class="roi-metrics">
-                    <div class="metric">
-                        <div class="metric-value">60%</div>
-                        <div class="metric-label">Faster Integration</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">40%</div>
-                        <div class="metric-label">Lower TCO</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">4x</div>
-                        <div class="metric-label">Time-to-Market</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">99.9%</div>
-                        <div class="metric-label">Uptime SLA</div>
-                    </div>
-                </div>
-                <div style="margin-top: 40px; padding: 30px; background: var(--bg-light); border-radius: 8px;">
-                    <h3 style="color: var(--primary-dark); margin-bottom: 20px;">How We Reduce Integration Costs</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;">
-                        <div>
-                            <h4 style="color: var(--primary); margin-bottom: 10px;">Pre-Built Adapters</h4>
-                            <p style="color: var(--text-light);">Eliminate weeks of integration work with ready-to-use connectors for popular services and APIs.</p>
-                        </div>
-                        <div>
-                            <h4 style="color: var(--primary); margin-bottom: 10px;">Shared Infrastructure</h4>
-                            <p style="color: var(--text-light);">One platform provides observability, queuing, messaging, and authentication—no separate tools to manage.</p>
-                        </div>
-                        <div>
-                            <h4 style="color: var(--primary); margin-bottom: 10px;">Schema-Driven Development</h4>
-                            <p style="color: var(--text-light);">Define once, generate forms, APIs, and workflows automatically. Reduce boilerplate code by 70%.</p>
-                        </div>
-                        <div>
-                            <h4 style="color: var(--primary); margin-bottom: 10px;">Vendor Lock-In Prevention</h4>
-                            <p style="color: var(--text-light);">Open-source friendly. Easy to customize, fork, or migrate. Your data, your control.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<span class="k">schema</span>:
+  <span class="k">type</span>: object
+  <span class="k">properties</span>:
+    <span class="k">workdir</span>:   { <span class="k">type</span>: <span class="s">string</span> }
+    <span class="k">personaId</span>: { <span class="k">type</span>: <span class="s">string</span> }
 
-            <!-- Use Cases -->
-            <section class="section">
-                <h2 class="section-title">
-                    <span class="section-icon">🎯</span>
-                    Common Use Cases
-                </h2>
-                <p style="color: var(--text-light); margin-bottom: 30px; font-size: 1.05em;">Click on any use case to learn how Reactory enables each solution</p>
-                <div class="value-grid">
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>SaaS Platforms</h3>
-                        <p>Multi-tenant applications with rapid feature deployments, custom integrations, and AI-powered workflows.</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
+<span class="k">uiSchema</span>:
+  <span class="p">ui:form</span>:  { <span class="k">showSubmit</span>: <span class="s">true</span> }
+  <span class="p">ui:field</span>: GridLayout
+  <span class="p">ui:grid-layout</span>:
+    - <span class="k">workdir</span>:  { <span class="k">md</span>: 12 }
+      <span class="k">provider</span>: { <span class="k">lg</span>: 6, <span class="k">sm</span>: 12 }
+  <span class="k">workdir</span>:
+    <span class="p">ui:widget</span>: TextWidget</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform -->
+        <section class="sec reveal" id="platform">
+            <div class="sec__kicker">What you don't have to build</div>
+            <h2 class="sec__title">The part nobody should build twice</h2>
+            <p class="sec__lede">
+                Tenancy, identity, access control, observability and durable process are the parts of an
+                enterprise application that take the longest and differentiate the least. They ship with
+                the platform, wired together and tested.
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon">🏢</div>
+                    <h3>Multi-tenancy, not a tenant column</h3>
+                    <p>Every request resolves a tenant. Cache keys, themes, menus, routes, auth providers,
+                    feature flags and even database connections are resolved per tenant — so one deployment
+                    serves many customers against their own infrastructure.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🔐</div>
+                    <h3>Four-dimensional RBAC</h3>
+                    <p>Access is a membership scoped to <strong>tenant × organisation × business unit × role</strong>.
+                    "Finance Approver at Acme, EMEA, Payments" is expressible natively — not encoded into
+                    role-name strings you have to parse later.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🪪</div>
+                    <h3>Nine auth strategies</h3>
+                    <p>Local, JWT, anonymous, Google, Facebook, GitHub, LinkedIn, Microsoft Entra ID and Okta —
+                    enabled per tenant, extensible per module. OIDC-based enterprise SSO out of the box.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">📡</div>
+                    <h3>Observability from day one</h3>
+                    <p>OpenTelemetry spans and metrics throughout, Prometheus export, structured logging with
+                    correlation IDs, and decorators for tracing, counters, gauges and histograms on any service method.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🧱</div>
+                    <h3>A real service layer</h3>
+                    <p>Services register by FQN with declared dependencies, three lifecycles, and setter injection.
+                    Cross-cutting concerns — caching, audit, rate limiting, telemetry — are decorators, not boilerplate.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🖥️</div>
+                    <h3>Web and desktop from one definition set</h3>
+                    <p>A React PWA, and an Electron desktop build that embeds MongoDB, the server and the client
+                    into a single installable app that runs fully offline. A React Native client is in progress.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules -->
+        <section class="sec reveal" id="modules">
+            <div class="sec__kicker">Composable capability</div>
+            <h2 class="sec__title">Thirteen modules, one contract</h2>
+            <p class="sec__lede">
+                A module is the unit of capability. One declaration contributes across seventeen extension
+                points at once — GraphQL types and resolvers, services, forms, workflows, new workflow step
+                types, models, routes, middleware, auth strategies, CLI commands, translations, client
+                plugins and AI agents. Status below is what the code actually shows.
+            </p>
+
+            <div class="modgrid" id="modgrid"></div>
+
+            <div class="callout callout--info">
+                <div class="callout__title">Extending it</div>
+                <p>Modules are ordinary TypeScript objects implementing one interface. Every aggregation point
+                iterates the enabled set at startup, so a new module extends the GraphQL schema, the workflow
+                step vocabulary, the service registry and the agent tool list simultaneously — without touching
+                the core.</p>
+                <p>The Azure module ships deliberately as a worked example: a vendor API surfaced as services,
+                storage providers and configuration. Copy it as the template for wrapping your own systems.</p>
+            </div>
+        </section>
+
+        <!-- Workflow -->
+        <section class="sec reveal" id="workflow">
+            <div class="sec__kicker">Durable process</div>
+            <h2 class="sec__title">Workflows that survive the process that started them</h2>
+            <p class="sec__lede">
+                The workflow engine is a hardened fork of <code>workflow-es</code>, maintained by Reactory after
+                the original went dormant in 2019. Workflows are defined as code or YAML, persisted, and resumed
+                across restarts. Steps can sleep, wait for external events, branch, run in parallel — and compensate.
+            </p>
+
+            <div class="split" style="margin-bottom:34px">
+                <div class="cards" style="grid-template-columns:1fr">
+                    <div class="card">
+                        <div class="card__icon">♻️</div>
+                        <h3>Saga compensation</h3>
+                        <p>Declarative rollback of partially-completed work. Error policies are
+                        Retry, Suspend, Terminate or Compensate — chosen per step, not hand-rolled per process.</p>
                     </div>
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>Enterprise Suites</h3>
-                        <p>ERP, CRM, HCM extensions with compliance, audit trails, and enterprise-grade scalability built-in.</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
+                    <div class="card">
+                        <div class="card__icon">🔌</div>
+                        <h3>Pluggable everything</h3>
+                        <p>Persistence on SQLite, PostgreSQL, MongoDB or memory. Queue and distributed lock on
+                        Redis, Azure Service Bus or single-node. The same engine runs on a laptop and across a cluster.</p>
                     </div>
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>Digital Transformation</h3>
-                        <p>Modernize legacy systems without replacement. Connect, adapt, and extend existing infrastructure.</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
-                    </div>
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>Customer Ecosystems</h3>
-                        <p>B2B platforms, partner portals, and network effects with white-labeling and configurable workflows.</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
-                    </div>
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>AI-First Applications</h3>
-                        <p>Integrate LLMs, voice, computer vision, and intelligent automation into any workflow or process.</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
-                    </div>
-                    <div class="value-card use-case-card" onclick="openUseCasePanel(this)">
-                        <h3>Compliance &amp; Governance</h3>
-                        <p>Built-in audit logs, RBAC, encryption, and regulatory frameworks (KYC, financial reporting, etc.).</p>
-                        <div style="margin-top: 15px; color: var(--primary); font-weight: 600; cursor: pointer;">Learn more →</div>
+                    <div class="card">
+                        <div class="card__icon">🛡️</div>
+                        <h3>Hardened, and it fails loud</h3>
+                        <p>Optimistic concurrency, graceful drain, bounded concurrency, dead-lettering, at-rest
+                        encryption hooks and tenant scoping — an 18-item programme verified in CI against real
+                        Postgres, Mongo and Redis containers. The host refuses to start an unsafe provider topology.</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- CTA -->
-            <div class="cta-section">
-                <h2>Ready to Transform Your Development?</h2>
-                <p>Join enterprise organizations reducing integration costs and accelerating time-to-market with Reactory.</p>
                 <div>
-                    <button class="btn" onclick="alert('Contact sales: hello@reactory.net')">Get Started</button>
-                    <button class="btn" style="background: white; color: var(--primary);" onclick="alert('View documentation at docs.reactory.net')">Learn More</button>
+                    <div class="code" style="margin-bottom:18px">
+                        <div class="code__bar">
+                            <span class="code__dot"></span><span class="code__dot"></span><span class="code__dot"></span>
+                            <span class="code__file">YAML compiles to the durable engine</span>
+                        </div>
+<pre><span class="k">condition</span>   <span class="c">→</span> .if(cond).do(then)
+<span class="k">for_each</span>    <span class="c">→</span> .foreach(items).do(body)
+<span class="k">while</span>       <span class="c">→</span> .while(cond).do(body)
+<span class="k">parallel</span>    <span class="c">→</span> .parallel().do(branch)...join()
+<span class="k">saga</span>        <span class="c">→</span> .saga(body)
+              .compensateWithSequence(undo)
+<span class="k">wait_event</span>  <span class="c">→</span> .waitFor(name, key, date?)</pre>
+                    </div>
+                    <p style="color:var(--text-light);font-size:0.92rem;line-height:1.66">
+                        Authored as YAML with a visual designer that persists canvas state, ports and
+                        connections alongside the definition — then scheduled by cron with hot reload and a
+                        distributed scheduler lock.
+                    </p>
+                </div>
+            </div>
+
+            <h3 style="font-size:1.05rem;margin-bottom:14px;font-weight:660">35 step types, extensible per module</h3>
+            <div class="chips">
+                <span class="chip">start</span><span class="chip">end</span><span class="chip">log</span>
+                <span class="chip">delay</span><span class="chip">condition</span><span class="chip">for_each</span>
+                <span class="chip">while</span><span class="chip">parallel</span><span class="chip">join</span>
+                <span class="chip">task</span><span class="chip">custom</span><span class="chip">set_variable</span>
+                <span class="chip">validation</span><span class="chip">data_transformation</span>
+                <span class="chip">api_call</span><span class="chip">graphql</span><span class="chip">graphql_query</span>
+                <span class="chip">graphql_mutation</span><span class="chip">grpc</span><span class="chip">sql</span>
+                <span class="chip">mongo_query</span><span class="chip">mongo_write</span><span class="chip">mysql</span>
+                <span class="chip">postgres</span><span class="chip">mssql</span><span class="chip">search</span>
+                <span class="chip">service_invoke</span><span class="chip">invoke_workflow</span>
+                <span class="chip">cli_command</span><span class="chip">file_operation</span><span class="chip">email</span>
+                <span class="chip">telemetry</span><span class="chip">todo</span><span class="chip">user_activity</span>
+                <span class="chip">user_lookup</span>
+                <span class="chip chip--accent">agent_conversation</span>
+            </div>
+        </section>
+
+        <!-- Agents -->
+        <section class="sec reveal" id="agents">
+            <div class="sec__kicker">Agentic layering</div>
+            <h2 class="sec__title">Agency as an extension surface, not a chatbot bolted on the side</h2>
+            <p class="sec__lede">
+                Agents are declared the same way services and forms are — by modules, in YAML. Which means the
+                platform's own capabilities are automatically the agent's tools, and an agent turn can be a
+                durable step inside a business process.
+            </p>
+
+            <div class="layers" style="margin-bottom:30px">
+                <div class="layerrow">
+                    <div class="layerrow__num">01</div>
+                    <div><h4>Providers</h4><p>Ten registered in one YAML file — OpenAI, Anthropic, Google, AWS Bedrock,
+                    Azure OpenAI, xAI, Cohere, DeepSeek, GitHub Copilot, and Ollama for fully local inference.
+                    Five have native SDK adapters. Per-model context limits, cost, rate limits and capability
+                    negotiation for sampling and extended thinking.</p></div>
+                </div>
+                <div class="layerrow">
+                    <div class="layerrow__num">02</div>
+                    <div><h4>Personas</h4><p>An agent is a YAML file: model, system prompt, canned prompts, and a
+                    named subset of tools it is permitted to use. Any module can ship one, and users can author
+                    their own.</p></div>
+                </div>
+                <div class="layerrow">
+                    <div class="layerrow__num">03</div>
+                    <div><h4>Tools</h4><p>One registry spanning filesystem, shell, HTTP, GraphQL, five database
+                    engines, workflow control, code review, browser automation and tenant administration —
+                    gated by role <em>and</em> by persona. Execution is governed by an approval model:
+                    auto, safe-auto, prompt, or read-only plan mode.</p></div>
+                </div>
+                <div class="layerrow">
+                    <div class="layerrow__num">04</div>
+                    <div><h4>Skills</h4><p>Markdown procedure guides the agent discovers on demand rather than
+                    carrying in its context window. Progressive disclosure, contributed per module.</p></div>
+                </div>
+                <div class="layerrow">
+                    <div class="layerrow__num">05</div>
+                    <div><h4>Orchestration</h4><p><code>agent_conversation</code> is a workflow step — so an agent
+                    turn is durable, resumable and idempotent on retry, and can produce structured output for
+                    downstream steps. Agents also author and run workflows themselves.</p></div>
+                </div>
+            </div>
+
+            <div class="split">
+                <div class="card">
+                    <div class="card__icon">🔁</div>
+                    <h3>MCP in both directions</h3>
+                    <p>Reactory is an MCP <strong>server</strong> — every role-filtered platform capability is
+                    automatically exposed as an MCP tool, so Claude Desktop, Cursor or any MCP client can drive it.
+                    It is also an MCP <strong>client</strong>, with a connector registry and an installation flow.
+                    Add a capability once; it lands in three places.</p>
+                </div>
+                <div class="card">
+                    <div class="card__icon">🧬</div>
+                    <h3>Agents that compose real UI</h3>
+                    <p>Because every tool holds the full platform context, an agent can call registered services,
+                    query the platform's own GraphQL API, and render live Reactory forms and registered components
+                    into the chat panel — building interfaces out of the application's own building blocks.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrate -->
+        <section class="sec reveal" id="integrate">
+            <div class="sec__kicker">Integration</div>
+            <h2 class="sec__title">Reach anything, then package it as a module</h2>
+            <p class="sec__lede">
+                Any workflow step, service or AI agent can reach any of the following. Once an integration is
+                worth keeping, it becomes a module — and extends every layer at once.
+            </p>
+
+            <div class="tablewrap">
+                <table class="spectable">
+                    <thead>
+                        <tr><th scope="col">Target</th><th scope="col">How</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>REST / HTTP</strong></td><td>Pluggable auth and header providers, an <code>api_call</code> step, and HTTP verb tools for agents</td></tr>
+                        <tr><td><strong>GraphQL</strong></td><td>Internal and external, including server-side calls on behalf of the user — plus schema introspection as an agent tool</td></tr>
+                        <tr><td><strong>gRPC</strong></td><td>Module-declared protos; Reactory both consumes and serves gRPC</td></tr>
+                        <tr><td><strong>MongoDB · PostgreSQL · MySQL · MSSQL · Databricks</strong></td><td>Per-tenant connection factory, dedicated workflow steps and agent tools for each</td></tr>
+                        <tr><td><strong>Search</strong></td><td>MeiliSearch behind a swappable provider facade</td></tr>
+                        <tr><td><strong>Queues</strong></td><td>BullMQ/Redis, AWS SQS or in-memory behind one provider interface</td></tr>
+                        <tr><td><strong>Files &amp; storage</strong></td><td>Local, Azure Blob, Azure File Share, with a tenant-scoped CDN</td></tr>
+                        <tr><td><strong>Browser</strong></td><td>Playwright sessions — navigate, click, type, evaluate, screenshot, PDF</td></tr>
+                        <tr><td><strong>MCP</strong></td><td>Any MCP server over HTTP or stdio, with OAuth</td></tr>
+                        <tr><td><strong>SaaS</strong></td><td>Google Workspace, Slack, Azure, Twilio, SendGrid, AWS SNS</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="callout">
+                <div class="callout__title">Scope note — data movement</div>
+                <p>The engine has database connectors, transformation steps and durable execution, so it covers
+                transactional, business-process-adjacent data movement well — with resumability and saga rollback
+                that most tools in this class don't offer.</p>
+                <p>It is <strong>not</strong> an ETL engine in the sense a data engineer means, and we don't position
+                it against dbt, Airflow or Fivetran. There is no batching or streaming extraction, no incremental
+                load or change-data-capture, no bulk upsert, and no data lineage. Practical volumes are thousands
+                of records per run, not millions. If you need warehouse-scale pipelines, run them where they belong
+                and orchestrate the business process here.</p>
+            </div>
+        </section>
+
+        <!-- Build -->
+        <section class="sec reveal" id="build">
+            <div class="sec__kicker">Getting started</div>
+            <h2 class="sec__title">From clone to first screen</h2>
+
+            <div class="pilltabs" role="tablist">
+                <button class="pilltab is-active" role="tab" aria-selected="true" aria-controls="panel-dev" data-tab="dev">For engineers</button>
+                <button class="pilltab" role="tab" aria-selected="false" aria-controls="panel-biz" data-tab="biz">For decision makers</button>
+            </div>
+
+            <div class="tabpanel is-active" id="panel-dev" role="tabpanel">
+                <div class="split">
+                    <div class="layers">
+                        <div class="layerrow"><div class="layerrow__num">01</div><div><h4>Define the tenant</h4>
+                            <p>A config document — key, roles, auth providers, theme, menus, feature flags.
+                            Authored as TypeScript or YAML with environment interpolation, upserted at startup.</p></div></div>
+                        <div class="layerrow"><div class="layerrow__num">02</div><div><h4>Scaffold the module</h4>
+                            <p>Via CLI, or let an agent do it. A directory with one <code>index.ts</code>
+                            implementing the module interface.</p></div></div>
+                        <div class="layerrow"><div class="layerrow__num">03</div><div><h4>Model the domain</h4>
+                            <p>Mongoose or TypeORM models — or point at an existing database and use the generators,
+                            which produce Reactory scaffolding from live Mongo, MySQL, Postgres or SQL Server schemas.</p></div></div>
+                        <div class="layerrow"><div class="layerrow__num">04</div><div><h4>Build the interface</h4>
+                            <p>Form definitions from 46 shipped widgets. Each auto-registers as a component and
+                            becomes routable immediately.</p></div></div>
+                        <div class="layerrow"><div class="layerrow__num">05</div><div><h4>Wire the process</h4>
+                            <p>A YAML workflow using the 35 built-in step types, or a code workflow if you need
+                            the type system.</p></div></div>
+                        <div class="layerrow"><div class="layerrow__num">06</div><div><h4>Ship it</h4>
+                            <p>Per-tenant Docker images; Terraform for AWS, DigitalOcean, Linode and minikube;
+                            Helm ingress with cert-manager; Istio manifests; PM2 or systemd for plain VMs.</p></div></div>
+                    </div>
+
+                    <div>
+                        <div class="code" style="margin-bottom:20px">
+                            <div class="code__bar">
+                                <span class="code__dot"></span><span class="code__dot"></span><span class="code__dot"></span>
+                                <span class="code__file">module contract — one object, seventeen extension points</span>
+                            </div>
+<pre><span class="k">export default</span> {
+  nameSpace: <span class="s">'acme'</span>, name: <span class="s">'Billing'</span>, version: <span class="s">'1.0.0'</span>,
+  priority: <span class="p">10</span>,
+
+  graphDefinitions,  <span class="c">// SDL + resolvers + directives</span>
+  services,          <span class="c">// FQN-registered, DI by convention</span>
+  forms,             <span class="c">// screens</span>
+  workflows,         <span class="c">// durable processes</span>
+  workflowSteps,     <span class="c">// new YAML step types</span>
+  models,            <span class="c">// mongoose / typeorm</span>
+  routes,            <span class="c">// express routers</span>
+  middleware,        <span class="c">// ordinal-sorted</span>
+  passportProviders, <span class="c">// auth strategies</span>
+  clientPlugins,     <span class="c">// UMD bundles for the web client</span>
+  cli, translations, pdfs, grpc,
+
+  reactor: {         <span class="c">// the agentic surface</span>
+    agents, tools, skills, mcp, providers
+  },
+}</pre>
+                        </div>
+                        <div class="callout callout--info" style="margin-top:0">
+                            <div class="callout__title">Runtime compilation</div>
+                            <p>Write a component's source and the server rebuilds its bundle on checksum change,
+                            pushing it to the client on next load — no frontend deployment. 48 components ship
+                            this way in the standard distribution, including the entire workflow management UI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabpanel" id="panel-biz" role="tabpanel">
+                <div class="cards">
+                    <div class="card">
+                        <div class="card__icon">📉</div>
+                        <h3>A smaller team can carry it</h3>
+                        <p>Tenancy, RBAC, SSO, audit, observability and durable process are the parts that
+                        normally require specialists. Shipping them in the platform is what lets a small team
+                        maintain software with enterprise characteristics.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon">🔄</div>
+                        <h3>Change without release cycles</h3>
+                        <p>Screens, routes, menus, themes, role assignments and business processes are
+                        configuration. Adjusting them is an operational act, not an engineering sprint —
+                        which changes who in the organisation can make a change, and how fast.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon">🔓</div>
+                        <h3>No lock-in by construction</h3>
+                        <p>MIT-licensed platform, self-hosted on your infrastructure, standard components
+                        underneath — Node, Express, GraphQL, MongoDB, Postgres, Redis. Your data stays in
+                        your databases and the source is yours to fork.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon">🤖</div>
+                        <h3>An AI strategy that isn't a rewrite</h3>
+                        <p>Agents reach existing capability through the same registry everything else uses,
+                        and run inside governed workflows with an explicit approval model. Local inference via
+                        Ollama is supported where data cannot leave your estate.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon">🏗️</div>
+                        <h3>Multi-tenant from the start</h3>
+                        <p>If you serve several customers, business units or brands, one deployment covers them —
+                        each with its own branding, roles, auth providers, feature flags and, if needed, its own
+                        database.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon">🔎</div>
+                        <h3>Honest about maturity</h3>
+                        <p>The workflow engine, tenancy, auth and service layer are production-grade. The mobile
+                        client, SAML support and parts of the agentic wiring are not there yet — and we say so
+                        below rather than in a footnote after you've committed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maturity -->
+        <section class="sec reveal" id="maturity">
+            <div class="sec__kicker">Where it is</div>
+            <h2 class="sec__title">What's solid, and what isn't yet</h2>
+            <p class="sec__lede">
+                Most platform sites tell you only the first half. Evaluating a foundation you'll build years of
+                work on deserves the second half too.
+            </p>
+            <div class="roadmap">
+                <div class="rm">
+                    <div class="rm__head"><h4>Workflow engine</h4><span class="badge badge--production">Production</span></div>
+                    <p>18-item hardening programme complete and verified in CI against real Postgres, Mongo and
+                    Redis containers, with 26 scenario specs covering saga compensation, multi-host fanout and
+                    persistence conformance.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Tenancy, RBAC &amp; auth</h4><span class="badge badge--production">Production</span></div>
+                    <p>Nine strategies with an enforced 80% coverage threshold. SAML is not supported — enterprise
+                    SSO is OIDC-only today.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Web client &amp; form engine</h4><span class="badge badge--production">Production</span></div>
+                    <p>A newer rjsf 5 engine is complete with 517 passing tests but ships behind a feature flag
+                    while the mature engine remains the default. Migration is deliberate, not stalled.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Agentic layer</h4><span class="badge badge--production">Production</span></div>
+                    <p>Conversation engine, streaming, provider adapters and both MCP directions are substantial
+                    and tested. Some authored skills and workflows are not yet registered in their catalogs.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Desktop (Electron)</h4><span class="badge badge--production">Production</span></div>
+                    <p>Embeds MongoDB, the server and the client into one installable app with auto-update.
+                    Builds for macOS, Windows and Linux.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Mobile (React Native)</h4><span class="badge badge--progress">In progress</span></div>
+                    <p>A well-built SDK layer exists — registry, auth, theming, schema caching — but there is no
+                    form renderer yet and screens are placeholders. Do not plan around it today.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>MCP OAuth</h4><span class="badge badge--progress">In progress</span></div>
+                    <p>Implemented with dynamic client registration and PKCE, unit tested, pending end-to-end
+                    validation against a live OAuth MCP server.</p>
+                </div>
+                <div class="rm">
+                    <div class="rm__head"><h4>Bulk data pipelines</h4><span class="badge badge--progress">Not the tool</span></div>
+                    <p>See the scope note under Integration. Orchestrate business processes here; run
+                    warehouse-scale pipelines in a dedicated tool.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Licence -->
+        <section class="sec reveal" id="licence">
+            <div class="sec__kicker">Licensing</div>
+            <h2 class="sec__title">Open core, stated plainly</h2>
+            <p class="sec__lede">
+                Everything required to build, run and operate a complete application is MIT licensed and yours
+                to fork. Specific vendor and domain integrations are commercially licensed. We'd rather you knew
+                that on the first page than the fifth.
+            </p>
+            <div class="licence">
+                <div class="licence__cell">
+                    <div class="licence__tag">MIT</div>
+                    <h4>The platform</h4>
+                    <p>Server, web client, core type contract, desktop shell and the workflow engine. Multi-tenancy,
+                    RBAC, all nine auth strategies, the GraphQL layer, the form engine, the service registry, the
+                    workflow engine and the agentic layer are all included.</p>
+                </div>
+                <div class="licence__cell">
+                    <div class="licence__tag">Apache-2.0</div>
+                    <h4>Open modules</h4>
+                    <p>The core module — users, organisations, business units, teams, files, forms, templates,
+                    email, search, caching, the workflow engine and migrations — plus the PDF manager.</p>
+                </div>
+                <div class="licence__cell">
+                    <div class="licence__tag">Commercial</div>
+                    <h4>Marketplace modules</h4>
+                    <p>Vendor and domain integrations — Google Workspace, Slack, Azure, KYC, Communicator,
+                    Knowledge Base, Classroom, Social Eyes and the AI Reactor module. Licensed per module.</p>
+                </div>
+                <div class="licence__cell">
+                    <div class="licence__tag">Self-hosted</div>
+                    <h4>Your infrastructure</h4>
+                    <p>No mandatory hosted service, no phone-home, no seat metering in the platform. Standard
+                    components underneath, and your data stays in databases you control.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="finalcta reveal">
+            <div class="finalcta__inner">
+                <h2>Build the application, not the foundation</h2>
+                <p>Clone the platform, define a tenant, and have a working multi-tenant application with
+                authentication, RBAC and a GraphQL API before you write your first line of domain logic.</p>
+                <div class="hero__cta">
+                    <a class="button button--primary" href="https://github.com/reactorynet">Explore the source</a>
+                    <a class="button button--ghost" href="#modules">Browse the modules</a>
                 </div>
             </div>
         </div>
+    </main>
 
-        <!-- Use Case Slide-out Panel -->
-        <div id="useCasePanelOverlay" class="module-panel-overlay" onclick="closeUseCasePanel()"></div>
-        <div id="useCasePanel" class="module-panel">
-            <div class="panel-header">
-                <button class="panel-close" onclick="closeUseCasePanel()">×</button>
-                <div class="panel-logo-container">
-                    <div class="panel-icon-large" id="useCasePanelIcon"></div>
-                </div>
-                <div class="panel-module-name" id="useCasePanelTitle"></div>
-                <div class="panel-module-tagline" id="useCasePanelSubtitle"></div>
-            </div>
-            <div class="panel-body" id="useCasePanelBody">
-                <!-- Content inserted dynamically -->
+    <footer class="foot">
+        <div class="foot__inner">
+            <p>
+                <strong style="color:var(--text-light)">Reactory</strong> — an open-core RAD platform for
+                multi-tenant enterprise software.<br>
+                Platform MIT licensed. Commercial modules licensed separately.
+            </p>
+            <div class="foot__links">
+                <a href="#platform">Platform</a>
+                <a href="#modules">Modules</a>
+                <a href="#maturity">Maturity</a>
+                <a href="#licence">Licence</a>
+                <a href="https://github.com/reactorynet">GitHub</a>
             </div>
         </div>
+    </footer>
 
-        <!-- Module Detail Panel (Slide-out) -->
-        <div id="modulePanelOverlay" class="module-panel-overlay" onclick="closeModulePanel()"></div>
-        <div id="modulePanel" class="module-panel">
-            <div class="panel-header">
-                <button class="panel-close" onclick="closeModulePanel()">×</button>
-                <div class="panel-logo-container" id="panelLogoContainer">
-                    <!-- Logo or icon inserted dynamically -->
-                </div>
-                <div class="panel-module-name" id="panelModuleName"></div>
-                <div class="panel-module-tagline" id="panelModuleTagline"></div>
-            </div>
-            <div class="panel-body" id="panelBody">
-                <!-- Content inserted dynamically -->
-            </div>
+    <!-- Module detail panel -->
+    <div id="modulePanelOverlay" class="module-panel-overlay" onclick="closeModulePanel()"></div>
+    <div id="modulePanel" class="module-panel" role="dialog" aria-modal="true" aria-labelledby="panelModuleName">
+        <div class="panel-header">
+            <button class="panel-close" onclick="closeModulePanel()" aria-label="Close">×</button>
+            <div class="panel-logo-container" id="panelLogoContainer"></div>
+            <div class="panel-module-name" id="panelModuleName"></div>
+            <div class="panel-module-tagline" id="panelModuleTagline"></div>
         </div>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2024 Reactory Platform. Built for enterprise. Designed for developers.</p>
-            <p style="margin-top: 10px; opacity: 0.6;">Reactory is an open-source RAD framework for building scalable, integrated applications.</p>
-        </footer>
+        <div class="panel-body" id="panelBody"></div>
     </div>
 
     <script>
-        // Use case data
-        const useCases = {
-            'SaaS Platforms': {
-                title: 'SaaS Platforms',
-                overview: 'Multi-tenant applications with rapid feature deployments, custom integrations, and AI-powered workflows.',
-                sections: [
-                    {
-                        title: 'Platform Challenge',
-                        content: 'Building a scalable SaaS requires managing multi-tenancy, rapid feature releases, integrations with customer systems, and AI-driven personalization—all while maintaining high availability and security.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'Built-in multi-tenancy with complete data isolation and custom branding per tenant',
-                            'Modular architecture enables feature releases without impacting running instances',
-                            'Pre-built adapters for popular SaaS tools reduce integration time from weeks to days',
-                            'Reactor module provides AI-powered code generation and intelligent automation',
-                            'GraphQL API enables flexible client integrations (web, mobile, partner apps)',
-                            'Event-driven queue system handles background jobs, notifications, and async workflows'
-                        ]
-                    },
-                    {
-                        title: 'Key Modules',
-                        points: [
-                            'Queue: Background jobs, scheduled tasks, event processing',
-                            'Communicator: Email, SMS, push notifications for multi-channel engagement',
-                            'Reactor: AI code generation and intelligent development assistance',
-                            'Telemetry: Monitor performance, usage patterns, and SLA compliance'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Launch to market 4x faster. Add new features in weeks, not months. Reduce infrastructure costs with efficient resource sharing. Scale from 1 to 1M users without rearchitecting.'
-                    }
-                ]
-            },
-            'Enterprise Suites': {
-                title: 'Enterprise Suites',
-                overview: 'ERP, CRM, HCM extensions with compliance, audit trails, and enterprise-grade scalability built-in.',
-                sections: [
-                    {
-                        title: 'Enterprise Challenge',
-                        content: 'Organizations need extensible, compliant platforms that integrate with existing infrastructure, maintain audit trails for regulatory requirements, and adapt to industry-specific workflows without vendor lock-in.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'Compliance framework built-in: RBAC, audit logs, encryption, regulatory templates',
-                            'API-first design enables bidirectional integration with legacy ERP/CRM/HCM systems',
-                            'Workflow orchestration via YAML—configure business logic without code changes',
-                            'Schema-driven forms auto-generate for any data model, including industry-specific schemas',
-                            'Microkernel architecture allows modular deployment for large organizations',
-                            'Open-source friendly; easy to customize and maintain long-term'
-                        ]
-                    },
-                    {
-                        title: 'Key Modules',
-                        points: [
-                            'KYC: Know Your Customer verification and compliance workflows',
-                            'Classroom: Learning management for employee onboarding and training',
-                            'Knowledge Base: Document management and enterprise search',
-                            'Azure: Seamless cloud integration for hybrid deployments'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Maintain compliance without custom code. Reduce operational risk with built-in audit trails. Extend capabilities without vendor dependency. Lower TCO through consolidation of tools.'
-                    }
-                ]
-            },
-            'Digital Transformation': {
-                title: 'Digital Transformation',
-                overview: 'Modernize legacy systems without replacement. Connect, adapt, and extend existing infrastructure.',
-                sections: [
-                    {
-                        title: 'Transformation Challenge',
-                        content: 'Legacy systems are deeply embedded in business processes. Full replacement is expensive and risky. Organizations need to modernize incrementally while maintaining operational continuity.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'Adapter pattern enables connection to legacy APIs, databases, and message queues',
-                            'Microkernel allows modernizing one business process at a time',
-                            'Schema-driven approach works with any data source or API',
-                            'Workflow engine orchestrates both legacy and modern components',
-                            'Zero-downtime deployments enable gradual modernization',
-                            'Event-driven architecture decouples legacy from modern systems'
-                        ]
-                    },
-                    {
-                        title: 'Implementation Pattern',
-                        points: [
-                            'Phase 1: Connect—build adapters to legacy data and APIs',
-                            'Phase 2: Extend—add modern features alongside legacy workflows',
-                            'Phase 3: Migrate—gradually move users to new capabilities',
-                            'Phase 4: Optimize—retire legacy components as usage drops'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Reduce transformation risk and cost. Deliver value incrementally. Maintain business continuity. Preserve existing investments while modernizing.'
-                    }
-                ]
-            },
-            'Customer Ecosystems': {
-                title: 'Customer Ecosystems',
-                overview: 'B2B platforms, partner portals, and network effects with white-labeling and configurable workflows.',
-                sections: [
-                    {
-                        title: 'Ecosystem Challenge',
-                        content: 'B2B platforms need to serve diverse partners with varying requirements. Customization and integration demands are high. Maintaining a single, flexible platform is complex.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'White-labeling built-in—customize UI, branding, and workflows per partner',
-                            'Schema-driven approach enables partner-specific configurations without code',
-                            'GraphQL API allows partners to build their own integrations and automations',
-                            'RBAC and permissions enable partner isolation and self-service features',
-                            'Multi-tenant architecture supports unlimited partner scaling',
-                            'Event system enables network effects and cross-partner workflows'
-                        ]
-                    },
-                    {
-                        title: 'Key Capabilities',
-                        points: [
-                            'Workflow templates for common partner scenarios',
-                            'Configurable approval chains and SLAs',
-                            'Partner dashboards with real-time metrics and analytics',
-                            'Self-service integration builders for technical partners'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Launch partner programs faster. Support diverse business models with one platform. Create defensible competitive moats through ecosystem lock-in. Scale partner count without proportional engineering effort.'
-                    }
-                ]
-            },
-            'AI-First Applications': {
-                title: 'AI-First Applications',
-                overview: 'Integrate LLMs, voice, computer vision, and intelligent automation into any workflow or process.',
-                sections: [
-                    {
-                        title: 'AI Challenge',
-                        content: 'Integrating AI into existing applications requires managing models, data pipelines, vector stores, and RAG systems. Organizations need platforms that make AI accessible without deep ML expertise.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'Reactor module provides AI-powered code generation and development assistance',
-                            'Speech module integrates voice input/output with LLM processing',
-                            'Knowledge Base with semantic search enables RAG (Retrieval-Augmented Generation)',
-                            'Event-driven architecture enables async AI processing (transcription, analysis, generation)',
-                            'Pre-built AI adapters for popular models (OpenAI, Anthropic, etc.)',
-                            'Vector store integration for semantic search and embeddings'
-                        ]
-                    },
-                    {
-                        title: 'Use Cases Enabled',
-                        points: [
-                            'AI-powered customer support with intelligent routing',
-                            'Voice-enabled workflows and dictation',
-                            'Semantic document search and knowledge base chat',
-                            'Automated content generation and summarization',
-                            'Intelligent workflow recommendations'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Unlock AI without hiring ML specialists. Improve customer experience with intelligent automation. Reduce operational costs through intelligent workflows. Stay competitive in AI-driven markets.'
-                    }
-                ]
-            },
-            'Compliance & Governance': {
-                title: 'Compliance & Governance',
-                overview: 'Built-in audit logs, RBAC, encryption, and regulatory frameworks (KYC, financial reporting, etc.).',
-                sections: [
-                    {
-                        title: 'Compliance Challenge',
-                        content: 'Regulated industries face complex compliance requirements: audit trails, data residency, encryption, access controls, and reporting. Building compliance from scratch is expensive and error-prone.'
-                    },
-                    {
-                        title: 'How Reactory Solves It',
-                        points: [
-                            'Immutable audit logs track all user actions with timestamps and context',
-                            'RBAC (Role-Based Access Control) with fine-grained permissions built-in',
-                            'End-to-end encryption for data in transit and at rest',
-                            'Data residency controls ensure compliance with geographic regulations',
-                            'Compliance frameworks pre-configured for KYC, AML, GDPR, HIPAA',
-                            'Automated compliance reporting and regulatory export'
-                        ]
-                    },
-                    {
-                        title: 'Integrated Compliance',
-                        points: [
-                            'KYC Module: Identity verification, document management, risk scoring',
-                            'Audit Trail: Complete history of all system changes and user actions',
-                            'Workflow Approval: Multi-level approvals with audit documentation',
-                            'Data Governance: Classification, retention policies, secure deletion'
-                        ]
-                    },
-                    {
-                        title: 'Business Impact',
-                        content: 'Reduce compliance risk and audit costs. Accelerate regulatory approvals. Simplify audits with comprehensive, immutable audit trails. Maintain customer trust with transparent governance.'
-                    }
-                ]
-            }
-        };
+    /* ------------------------------------------------------------------
+       Module catalogue — mirrors src/modules/available.json.
+       Keep in sync when modules are added or their licence changes.
+       ------------------------------------------------------------------ */
+    const MODULES = [
+        { key:'reactory-core', name:'Core', fqn:'core.ReactoryServer@1.0.0', licence:'Apache-2.0',
+          status:'core', logo:'./images/reactory-core-logo.png',
+          desc:'Users, organisations, business units, teams, files, forms, templates, email, search, caching, the workflow engine and migrations.',
+          detail:['Identity and org model — users, organisations, business units, teams, memberships','The workflow engine and YAML flow compiler','Form, file, template, email, search and cache services','Core GraphQL schema, resolvers and the auth directive','CLI commands, feature flags and per-module migrations'] },
 
-        // Module detail data
-        const modules = {
-            'Reactor': {
-                logo: './images/reactor-logo.png',
-                icon: null,
-                tagline: 'AI-Powered Development Assistance',
-                summary: 'The Reactor module provides AI-powered code generation and intelligent development assistance. It accelerates the entire development lifecycle from scaffolding to deployment with context-aware automation.',
-                capabilities: [
-                    'Intelligent code generation from natural language descriptions',
-                    'Context-aware suggestions across the entire codebase',
-                    'Automated boilerplate generation for modules, services, and forms',
-                    'Schema-driven development with JSON Schema to TypeScript auto-generation',
-                    'Workflow orchestration via YAML configuration',
-                    'GraphQL resolver generation from type definitions',
-                    'AI-assisted debugging and error resolution',
-                    'Multi-model support (OpenAI, Anthropic, local models)'
-                ],
-                keyModules: ['Queue', 'Communicator', 'Knowledge Base']
-            },
-            'Telemetry': {
-                logo: null,
-                icon: '📊',
-                tagline: 'OpenTelemetry Observability & Metrics',
-                summary: 'Comprehensive observability built on OpenTelemetry. Provides metrics collection, distributed tracing, Prometheus integration, and a GraphQL query API for real-time system monitoring.',
-                capabilities: [
-                    'Full OpenTelemetry SDK integration with auto-instrumentation',
-                    'Prometheus exporter for time-series metrics storage',
-                    'Distributed tracing with Jaeger backend support',
-                    'GraphQL query API for multi-source telemetry data',
-                    'Custom counter, histogram, gauge, and up/down counter metrics',
-                    'Request instrumentation middleware for HTTP endpoints',
-                    'Pre-configured dashboards for common Reactory metrics',
-                    'Cross-module correlation via trace context propagation'
-                ],
-                keyModules: ['Queue', 'Communicator']
-            },
-            'Queue': {
-                logo: null,
-                icon: '📬',
-                tagline: 'Background Jobs & Event Streaming',
-                summary: 'Robust background job processing and event streaming infrastructure. Handles async workflows, scheduled tasks, message queuing, and cross-module event distribution.',
-                capabilities: [
-                    'Background job processing with retry and dead-letter queues',
-                    'Scheduled task execution with cron-based triggers',
-                    'Event-driven architecture with pub/sub messaging',
-                    'Workflow orchestration via YAML definitions',
-                    'Message persistence and delivery guarantees',
-                    'Cross-module event distribution system',
-                    'Priority queue support for critical operations',
-                    'Monitoring and alerting for job failures'
-                ],
-                keyModules: ['Reactor', 'Communicator']
-            },
-            'Communicator': {
-                logo: './images/reactory-communicator-logo.png',
-                icon: null,
-                tagline: 'Multi-Channel Messaging Platform',
-                summary: 'Unified messaging platform supporting email, SMS, push notifications, and multi-channel engagement. Provides templating, delivery tracking, and intelligent routing.',
-                capabilities: [
-                    'Email delivery with template engine (EJS) and bulk sending',
-                    'SMS integration with major carriers',
-                    'Push notification support for web and mobile clients',
-                    'Multi-channel engagement workflows',
-                    'Template management with versioning and A/B testing',
-                    'Delivery tracking and bounce/failure handling',
-                    'Intelligent routing based on channel preference and availability',
-                    'Compliance with CAN-SPAM, TCPA, and GDPR requirements'
-                ],
-                keyModules: ['Queue', 'Reactor']
-            },
-            'Social Eyes': {
-                logo: null,
-                icon: '😀',
-                tagline: 'Social Media Intelligence & Monitoring',
-                summary: 'Social media monitoring and unified messaging across platforms. Provides keyword/hashtag listening, direct messaging, sentiment analysis, and event-driven workflows.',
-                capabilities: [
-                    'Multi-platform support: X (Twitter), Reddit, Facebook, Instagram',
-                    'Keyword and hashtag-based social listening with polling',
-                    'Unified inbox with conversation threading',
-                    'Event-driven workflow triggers on social events',
-                    'Data normalization across platform-specific formats',
-                    'Sentiment analysis integration',
-                    'OAuth connection management for social accounts',
-                    'GraphQL API for feed queries and message operations'
-                ],
-                keyModules: ['Queue', 'Communicator']
-            },
-            'Slack': {
-                logo: null,
-                icon: '💬',
-                tagline: 'Slack Integration & Bot Framework',
-                summary: 'Deep Slack integration with bidirectional messaging, bot framework, and event handling. Enables seamless communication between Reactory workflows and Slack channels.',
-                capabilities: [
-                    'Bidirectional messaging between Reactory and Slack',
-                    'Custom bot framework with slash commands',
-                    'Slack event handling (message, reaction, channel events)',
-                    'Interactive components (buttons, modals, pickers)',
-                    'Workflow triggers from Slack messages',
-                    'Multi-workspace support with per-channel configuration',
-                    'Rich message formatting with blocks and attachments',
-                    'OAuth app installation and token management'
-                ],
-                keyModules: ['Queue', 'Communicator']
-            },
-            'Azure': {
-                logo: null,
-                icon: '☁️',
-                tagline: 'Azure Cloud Services Integration',
-                summary: 'Comprehensive Azure services integration including blob storage, authentication, compute resources, and cloud-native patterns for hybrid deployments.',
-                capabilities: [
-                    'Azure Blob Storage for file management and CDN delivery',
-                    'Azure Active Directory authentication and SSO',
-                    'Azure Functions serverless compute integration',
-                    'Azure Key Vault for secrets management',
-                    'Azure Service Bus for event-driven architectures',
-                    'Hybrid cloud deployment patterns',
-                    'Resource scaling and cost optimization',
-                    'Azure Monitor integration with Reactory Telemetry'
-                ],
-                keyModules: ['Queue', 'Telemetry']
-            },
-            'Knowledge Base': {
-                logo: null,
-                icon: '📖',
-                tagline: 'Document Management & Semantic Search',
-                summary: 'Enterprise document management with semantic search capabilities. Enables AI-powered Q&A, document indexing, and knowledge retrieval across the organization.',
-                capabilities: [
-                    'Document ingestion from multiple sources (files, URLs, APIs)',
-                    'Vector store integration for semantic search',
-                    'AI-powered question answering over documents',
-                    'Full-text search with relevance ranking',
-                    'Document versioning and access control',
-                    'Automatic text extraction and chunking',
-                    'Embedding generation for vector similarity search',
-                    'Integration with Reactor for RAG workflows'
-                ],
-                keyModules: ['Reactor', 'Queue']
-            },
-            'Classroom': {
-                logo: './images/reactory-classroom.png',
-                icon: null,
-                tagline: 'Learning Management System',
-                summary: 'Comprehensive learning management platform with course creation, assessments, certifications, and progress tracking. Supports both internal training and customer education.',
-                capabilities: [
-                    'Course creation with modular lesson structure',
-                    'Assessment engine with quiz and exam support',
-                    'Certification workflows with completion tracking',
-                    'Progress analytics and reporting dashboards',
-                    'Multi-tenant course catalogs',
-                    'Integration with Communicator for notifications',
-                    'Schema-driven course content management',
-                    'Role-based access for instructors and students'
-                ],
-                keyModules: ['Communicator', 'Queue']
-            },
-            'KYC': {
-                logo: './images/reactory-kyc-logo.png',
-                icon: null,
-                tagline: 'Identity Verification & Compliance',
-                summary: 'Know Your Customer verification with identity document processing, risk scoring, and compliance workflows. Supports regulatory requirements across multiple jurisdictions.',
-                capabilities: [
-                    'Identity document verification (passport, ID card, driver license)',
-                    'Biometric verification with facial recognition',
-                    'Risk scoring and threat assessment',
-                    'Compliance workflows for KYC, AML, and GDPR',
-                    'Audit trail with immutable logging',
-                    'Document storage with encryption at rest',
-                    'Integration with external verification providers',
-                    'Custom compliance rule engine'
-                ],
-                keyModules: ['Queue', 'Communicator']
-            }
-        };
+        { key:'reactory-reactor', name:'Reactor', fqn:'reactory.Reactor@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactor-logo.png',
+          desc:'The agentic layer — AI providers, personas, tools, skills, MCP client and server, and agent workflow steps.',
+          detail:['Ten AI providers including Ollama for local inference','YAML personas contributed by any module','A tool registry that doubles as the MCP tool surface','MCP server and client, with OAuth','agent_conversation as a durable workflow step'] },
 
-        // Use case data with icons
-        const useCaseIcons = {
-            'SaaS Platforms': '🏢',
-            'Enterprise Suites': '🏛️',
-            'Digital Transformation': '🔄',
-            'Customer Ecosystems': '🌐',
-            'AI-First Applications': '🤖',
-            'Compliance & Governance': '📋'
-        };
+        { key:'reactory-telemetry', name:'Telemetry', fqn:'reactory.ReactoryTelemetry@1.0.0', licence:'Private',
+          status:'production', logo:'./images/reactory-telemetry-logo.png',
+          desc:'OpenTelemetry instrumentation, Prometheus metrics and a telemetry query API over traces, logs and metrics.',
+          detail:['OTel spans and metrics across services and workflows','Prometheus exporter and scrape endpoints','A GraphQL query API over telemetry sources','Decorators for tracing, counters, gauges and histograms'] },
 
-        // Open use case slide-out panel
-        function openUseCasePanel(element) {
-            const title = element.querySelector('h3').textContent;
-            const useCase = useCases[title];
-            
-            if (!useCase) return;
+        { key:'reactory-queue', name:'Queue', fqn:'reactory.Queue@1.0.0', licence:'Private',
+          status:'production', logo:'./images/reactory-queue-logo.png',
+          desc:'Background jobs and async processing over BullMQ/Redis, AWS SQS or in-memory, behind one provider interface.',
+          detail:['Three interchangeable backends behind one interface','gRPC and GraphQL control surfaces','OpenTelemetry instrumented','Swap backends without touching producers or consumers'] },
 
-            // Icon
-            document.getElementById('useCasePanelIcon').innerHTML = `<div class="panel-logo-fallback">${useCaseIcons[title] || '🎯'}</div>`;
-            
-            // Title & subtitle
-            document.getElementById('useCasePanelTitle').textContent = useCase.title;
-            document.getElementById('useCasePanelSubtitle').textContent = useCase.overview;
+        { key:'reactory-communicator', name:'Communicator', fqn:'reactory.CommunicatorModule@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactory-communicator-logo.png',
+          desc:'Multi-channel messaging orchestration — providers, templates, webhooks, queueing and provider health monitoring.',
+          detail:['Provider registry with health monitoring and failover','Template service with per-tenant overrides','Inbound webhook handling','Campaign and send workflows'] },
 
-            // Body
-            let bodyHTML = '';
+        { key:'reactory-kb', name:'Knowledge Base', fqn:'reactory.KB@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactory-knowledgebase-logo.png',
+          desc:'A knowledge base for people and AI agents alike, with visibility control, categories, tags and full-text search.',
+          detail:['Articles with visibility and role scoping','Full-text search integration','Consumed directly by AI personas as a resource','Review and sync workflows'] },
 
-            useCase.sections.forEach(section => {
-                bodyHTML += `<div class="panel-section">
-                    <div class="panel-section-title">${section.title}</div>`;
-                
-                if (section.content) {
-                    bodyHTML += `<p>${section.content}</p>`;
-                }
-                
-                if (section.points) {
-                    bodyHTML += '<ul>';
-                    section.points.forEach(point => {
-                        bodyHTML += `<li>${point}</li>`;
-                    });
-                    bodyHTML += '</ul>';
-                }
-                
-                bodyHTML += '</div>';
-            });
+        { key:'reactory-google', name:'Google Workspace', fqn:'google.ReactoryGoogle@1.0.0', licence:'Commercial',
+          status:'production', logo:null,
+          desc:'Gmail, Calendar, Drive, Docs, Sheets, Contacts and Tasks, including Cloud PubSub push webhooks.',
+          detail:['OAuth-based per-user Workspace access','Gmail, Calendar, Drive, Docs, Sheets, Contacts, Tasks','PubSub push webhooks for change notification','Surfaced as services, GraphQL fields and agent tools'] },
 
-            document.getElementById('useCasePanelBody').innerHTML = bodyHTML;
+        { key:'reactory-slack', name:'Slack', fqn:'reactory.SlackModule@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactory-slack-logo.png',
+          desc:'Messages, channels, threads and reactions, with a bundled Slack agent persona.',
+          detail:['Send and read messages, channels and threads','Reactions and thread management','Ships a slackbot AI persona','Services, resolvers, forms and gRPC surfaces'] },
 
-            // Show panel
-            document.getElementById('useCasePanel').classList.add('active');
-            document.getElementById('useCasePanelOverlay').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        { key:'reactory-socialeyes', name:'Social Eyes', fqn:'reactory.SocialEyes@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactory-socialeyes-logo.png',
+          desc:'Social listening and unified messaging across X, Reddit, Facebook and Instagram.',
+          detail:['Per-network adapters with a common interface','Listening, sentiment and direct messaging','Event-driven workflows','Ships the socialsandy AI persona'] },
 
-        // Close use case panel
-        function closeUseCasePanel() {
-            document.getElementById('useCasePanel').classList.remove('active');
-            document.getElementById('useCasePanelOverlay').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+        { key:'reactory-pdf-manager', name:'PDF Manager', fqn:'pdf-manager.ReactoryPdfManager@1.0.0', licence:'Apache-2.0',
+          status:'production', logo:null,
+          desc:'PDF generation, extraction and manipulation, with server-side font management.',
+          detail:['Definition-driven PDF report generation','Text and table extraction','Merge, split and watermark operations','Bundled font library for server-side rendering'] },
 
-        // Close panel when clicking outside
-        window.onclick = function(event) {
-            const useCasePanel = document.getElementById('useCasePanel');
-            const modulePanel = document.getElementById('modulePanel');
-            
-            if (event.target === useCasePanel) {
-                closeUseCasePanel();
-            } else if (event.target === modulePanel) {
-                closeModulePanel();
-            }
-        };
+        { key:'reactory-classroom', name:'Classroom', fqn:'classroom.ReactoryClassroom@1.0.0', licence:'Commercial',
+          status:'production', logo:'./images/reactory-classroom-logo.png',
+          desc:'Learning management — courses, assignments and progress tracking, using the Knowledge Base for materials.',
+          detail:['Courses, modules, assignments and progress','Knowledge Base integration for course materials','Sharing gated on KYC verification','Ships the booktutor AI persona'] },
 
-        // Close panel with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                const modulePanel = document.getElementById('modulePanel');
-                const useCasePanel = document.getElementById('useCasePanel');
-                
-                if (useCasePanel.classList.contains('active')) {
-                    closeUseCasePanel();
-                } else if (modulePanel.classList.contains('active')) {
-                    closeModulePanel();
-                }
-            }
+        { key:'reactory-kyc', name:'KYC', fqn:'reactory.KYC@1.0.0', licence:'Commercial',
+          status:'progress', logo:'./images/reactory-kyc-logo.png',
+          desc:'Identity verification and compliance workflows. Under active development — self-reported at roughly 62% complete.',
+          detail:['Document, automated, manual and hybrid verification flows','Pluggable verification providers','Compliance audit trail','Status: in progress — not yet recommended for production'] },
+
+        { key:'reactory-azure', name:'Azure', fqn:'core.ReactoryAzure@1.0.0', licence:'Commercial',
+          status:'example', logo:'./images/reactory-azure-logo.png',
+          desc:'Azure and Microsoft services with blob and file-share storage. Ships as a worked example of module authoring.',
+          detail:['Azure Blob and File Share storage providers','Microsoft service integration helpers','Explicitly published as a reference example','Useful as a template for your own vendor module'] },
+    ];
+
+    const STATUS_LABEL = { core:'Core', production:'Production', progress:'In progress', example:'Example' };
+
+    function initialsFor(name) {
+        return name.split(/\s+/).slice(0, 2).map(function (w) { return w[0]; }).join('').toUpperCase();
+    }
+
+    function renderModules() {
+        var grid = document.getElementById('modgrid');
+        grid.innerHTML = MODULES.map(function (m, i) {
+            var art = m.logo
+                ? '<img src="' + m.logo + '" alt="" class="mod__logo">'
+                : '<div class="mod__fallback" aria-hidden="true">' + initialsFor(m.name) + '</div>';
+            return '<button class="mod" data-index="' + i + '" aria-haspopup="dialog">' +
+                   '<div class="mod__top">' + art +
+                   '<div><div class="mod__name">' + m.name + '</div>' +
+                   '<div class="mod__fqn">' + m.fqn + '</div></div></div>' +
+                   '<div class="mod__desc">' + m.desc + '</div>' +
+                   '<div class="mod__foot">' +
+                   '<span class="badge badge--' + m.status + '">' + STATUS_LABEL[m.status] + '</span>' +
+                   '<span class="mod__licence">' + m.licence + '</span>' +
+                   '</div></button>';
+        }).join('');
+
+        Array.prototype.forEach.call(grid.querySelectorAll('.mod'), function (el) {
+            el.addEventListener('click', function () { openModulePanel(MODULES[+el.dataset.index]); });
         });
+    }
 
-        // Close module panel
-        function closeModulePanel() {
-            document.getElementById('modulePanel').classList.remove('active');
-            document.getElementById('modulePanelOverlay').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
+    function openModulePanel(m) {
+        document.getElementById('panelLogoContainer').innerHTML = m.logo
+            ? '<img src="' + m.logo + '" alt="" class="panel-logo">'
+            : '<div class="mod__fallback" style="width:64px;height:64px;font-size:1.4rem">' + initialsFor(m.name) + '</div>';
+        document.getElementById('panelModuleName').textContent = m.name;
+        document.getElementById('panelModuleTagline').textContent = m.fqn;
+        document.getElementById('panelBody').innerHTML =
+            '<div class="panel-section">' +
+              '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px">' +
+                '<span class="badge badge--' + m.status + '">' + STATUS_LABEL[m.status] + '</span>' +
+                '<span class="badge badge--core">' + m.licence + '</span>' +
+              '</div>' +
+              '<p style="color:var(--text-light);line-height:1.7">' + m.desc + '</p>' +
+            '</div>' +
+            '<div class="panel-section">' +
+              '<div class="panel-section-title">What it provides</div>' +
+              '<ul style="color:var(--text-light);line-height:1.9;padding-left:20px">' +
+                m.detail.map(function (d) { return '<li>' + d + '</li>'; }).join('') +
+              '</ul>' +
+            '</div>';
+        document.getElementById('modulePanel').classList.add('active');
+        document.getElementById('modulePanelOverlay').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
 
-        // Toggle content views
-        function showView(viewId) {
-            // Hide all views
-            document.querySelectorAll('.content-view').forEach(view => {
-                view.classList.remove('active');
-            });
-            
-            // Remove active state from buttons
-            document.querySelectorAll('.toggle-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected view
-            document.getElementById(viewId).classList.add('active');
-            
-            // Mark clicked button as active
-            event.target.classList.add('active');
-        }
+    function closeModulePanel() {
+        document.getElementById('modulePanel').classList.remove('active');
+        document.getElementById('modulePanelOverlay').classList.remove('active');
+        document.body.style.overflow = '';
+    }
 
-        // Add smooth scroll to navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
+    /* Audience tabs */
+    function initTabs() {
+        var tabs = document.querySelectorAll('.pilltab');
+        Array.prototype.forEach.call(tabs, function (tab) {
+            tab.addEventListener('click', function () {
+                Array.prototype.forEach.call(tabs, function (t) {
+                    t.classList.remove('is-active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('is-active');
+                tab.setAttribute('aria-selected', 'true');
+                Array.prototype.forEach.call(document.querySelectorAll('.tabpanel'), function (p) {
+                    p.classList.remove('is-active');
+                });
+                var panel = tab.dataset.tab === 'dev' ? 'panel-dev' : 'panel-biz';
+                document.getElementById(panel).classList.add('is-active');
             });
         });
+    }
 
-        // Module card interactivity — open slide-out panel
-        document.querySelectorAll('.module-card').forEach(card => {
-            card.addEventListener('click', function() {
-                const name = this.querySelector('.module-name').textContent;
-                const moduleData = modules[name];
-                if (!moduleData) return;
-
-                // Logo
-                const logoContainer = document.getElementById('panelLogoContainer');
-                if (moduleData.logo) {
-                    logoContainer.innerHTML = `<img src="${moduleData.logo}" alt="${name}" class="panel-logo">`;
-                } else {
-                    logoContainer.innerHTML = `<div class="panel-logo-fallback">${moduleData.icon}</div>`;
-                }
-
-                // Name & tagline
-                document.getElementById('panelModuleName').textContent = name;
-                document.getElementById('panelModuleTagline').textContent = moduleData.tagline;
-
-                // Body
-                let bodyHTML = '';
-
-                // Summary
-                bodyHTML += `<div class="panel-section">
-                    <div class="panel-section-title">Overview</div>
-                    <p>${moduleData.summary}</p>
-                </div>`;
-
-                // Capabilities
-                if (moduleData.capabilities && moduleData.capabilities.length > 0) {
-                    bodyHTML += `<div class="panel-section">
-                        <div class="panel-section-title">Capabilities</div>
-                        <ul>`;
-                    moduleData.capabilities.forEach(cap => {
-                        bodyHTML += `<li>${cap}</li>`;
-                    });
-                    bodyHTML += `</ul></div>`;
-                }
-
-                // Key modules
-                if (moduleData.keyModules && moduleData.keyModules.length > 0) {
-                    bodyHTML += `<div class="panel-section">
-                        <div class="panel-section-title">Key Modules</div>
-                        <div class="panel-key-modules">`;
-                    moduleData.keyModules.forEach(m => {
-                        bodyHTML += `<span class="panel-key-module-tag">${m}</span>`;
-                    });
-                    bodyHTML += `</div></div>`;
-                }
-
-                document.getElementById('panelBody').innerHTML = bodyHTML;
-
-                // Show panel
-                document.getElementById('modulePanel').classList.add('active');
-                document.getElementById('modulePanelOverlay').classList.add('active');
-                document.body.style.overflow = 'hidden';
+    /* Scroll reveal */
+    function initReveal() {
+        var els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) {
+            Array.prototype.forEach.call(els, function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
             });
-        });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+        Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+    }
 
-        // Value card hover effect
-        document.querySelectorAll('.value-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.borderLeftWidth = '6px';
+    /* Nav scroll spy */
+    function initScrollSpy() {
+        var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav__links a'));
+        var sections = links
+            .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+            .filter(Boolean);
+        if (!sections.length || !('IntersectionObserver' in window)) return;
+
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (!e.isIntersecting) return;
+                links.forEach(function (l) {
+                    l.classList.toggle('is-active', l.getAttribute('href') === '#' + e.target.id);
+                });
             });
-            card.addEventListener('mouseleave', function() {
-                this.style.borderLeftWidth = '4px';
-            });
-        });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        sections.forEach(function (s) { io.observe(s); });
+    }
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModulePanel();
+    });
+
+    renderModules();
+    initTabs();
+    initReveal();
+    initScrollSpy();
     </script>
-
-
-</body></html>
+</body>
+</html>
